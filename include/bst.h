@@ -2,7 +2,7 @@
 #ifndef INCLUDE_BST_H_
 #define INCLUDE_BST_H_
 template<typename T>
-class BSTNew {
+class BST {
  private:
   struct Node {
     T value;
@@ -50,7 +50,7 @@ class BSTNew {
   }
 
  public:
-  BSTNew() :root(nullptr) {}
+  BST() :root(nullptr) {}
   void add(T v) {
     root = addNode(root, v);
   }
